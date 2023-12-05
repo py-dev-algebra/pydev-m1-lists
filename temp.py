@@ -1,13 +1,13 @@
-contacts = []
+number_n = int(input("Unesite broj n koji će biti posljednji broj liste: "))  # [1,2,3,4,5,6,7,8,9,10]
+list_number = list(range(number_n))
+list_number.append(number_n)
+print(list_number)
 
-for i in range(2): #0,1
-    first_name = input(f'Upišite ime {i + 1}. kontakta: ')
-    last_name = input(f'Upišite prezime {i + 1}. kontakta: ')
-    phone = input(f'Upišite broj telefona {i + 1} kontakta: ')
-
-    contacts.append(first_name)
-    contacts.append(last_name)
-    contacts.append(phone)
-
-for contact in contacts:
-    print(contact, end= ' ') 
+index = 0
+sum = 0
+for i in list_number:
+    sum = sum + int(list_number[index])
+    index = index + 1
+    
+print("Sum:", sum)
+print("Average: ",sum/number_n)
