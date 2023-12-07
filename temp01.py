@@ -6,7 +6,7 @@ print(list_number)
 index = 0
 sum = 0
 for i in list_number:
-    sum = sum + int(list_number[index])
+    sum = sum * int(list_number[index])
     index = index + 1
     
 print("Sum:", sum)

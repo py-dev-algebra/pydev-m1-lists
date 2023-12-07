@@ -11,8 +11,11 @@ sum_limit = int(input('Upisite broj do kojeg zelite zbrajati: '))
 numbers_sum = 0
 
 for i in range(1, sum_limit + 1):
-    #numbers_sum = numbers_sum + i
+    # = ovo nije znak jednakosti nego je znak za pridruzivanje ->
+    #       ono s desne strane znaka pridruzi onome s lijeve
+    # numbers_sum = numbers_sum + i
     numbers_sum += i
+    # numbers_sum *= i -> numbers_sum = numbers_sum * i
     numbers.append(i)
 
 print(f'Zbroj brojeva od 1 do {sum_limit} je: {numbers_sum}')
