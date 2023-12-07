@@ -44,18 +44,60 @@ print('\n')
 #     print(i, end=' ')
 # print('\n')
 
-#endregion
 
 # Prebrojavanje koliko puta se u listi pojavljuje element
-numbers[3] = 15
-element = 15
-number_count = numbers.count(element)
+# numbers[3] = 15
+# element = 15
+# number_count = numbers.count(element)
 
-print(f'Element {element} se pojavljuje u listi {number_count} puta.')
-
-
+# print(f'Element {element} se pojavljuje u listi {number_count} puta.')
 
 
+# element = 10
+# index_of_element = numbers.index(element)
+# print(f'Element {element} se u listi nalazi na indeksu {index_of_element}.')
+
+
+# text = 'Programiranjea'
+# index_of_letter = text.index('a')
+# print(f'Slovo "a" se u rijeci {text} nalazi na poziciji {index_of_letter + 1}.')
+# index_of_letter = text.index('a', index_of_letter + 1)
+# print(f'Slovo "a" se u rijeci {text} nalazi na poziciji {index_of_letter + 1}.')
+# index_of_letter = text.index('a', index_of_letter + 1)
+# print(f'Slovo "a" se u rijeci {text} nalazi na poziciji {index_of_letter + 1}.')
+
+# index_of_letter = 0
+# for letter in text:
+#     index_of_letter = text.index('a', index_of_letter + 1)
+#     print(f'Slovo "a" se u rijeci {text} nalazi na poziciji {index_of_letter + 1}.')
+
+#endregion
+
+# Ispis sortirane liste
+# Sortiranje liste od manjeg prema vecem
+# numbers.sort()
+# for i in numbers:
+#     print(i, end=' ')
+# print('\n')
+
+
+# Sortiranje liste od veceg prema manjem
+#numbers.sort(reverse=True)
+numbers.reverse()
+for i in numbers:
+    print(i, end=' ')
+print('\n')
+
+
+# print('Ispis pomocu reverseD()')
+# for i in reversed(numbers):
+#     print(i, end=' ')
+# print('\n')
+
+print('Ispis pomocu sorteD()')
+for i in sorted(numbers):
+    print(i, end=' ')
+print('\n')
 
 
 for i in numbers:
